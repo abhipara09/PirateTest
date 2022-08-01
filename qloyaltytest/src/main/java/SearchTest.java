@@ -34,8 +34,6 @@ public class SearchTest {
 
 	@Test
 	public void test_existence() throws InterruptedException {
-			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "/drivers/chromedriver.exe");
-			Thread.sleep(15000);
 			if (driver.findElements(By.xpath("/html[1]/body[1]/div[1]/div[1]/input[1]")).size() !=0) {
 				System.out.println("input text field exists on the main screen");
 			} else
